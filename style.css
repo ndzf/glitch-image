@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #272a37;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  background-image: url("./images/boom.png");
+  width: 340px;
+  height: 360px;
+  background-size: cover;
+  animation: glitch 3.5s infinite steps(1);
+}
+
+@keyframes glitch {
+  0%,
+  100% {
+    background-image: url("./images/boom.png");
+  }
+
+  93% {
+    background-image: url("./images/boom-1.png");
+  }
+
+  89% {
+    background-image: url("./images/boom-2.png");
+  }
+
+  89% {
+    background-image: url("./images/boom-3.png");
+  }
+}
